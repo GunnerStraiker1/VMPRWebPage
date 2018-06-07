@@ -1,0 +1,147 @@
+#Menu{
+	background-color: #fff;
+}
+
+#Cuerpo{
+	background-color: #00FFFF;
+}
+
+#Menu-Despegable> ul> li> a{
+	text-align: center;
+	font-size: 150%;
+	height: 60px;
+	width: 100%;
+	font-weight: bold;
+	vertical-align: middle;
+
+}
+#credenciales> li{
+	height: 60px;
+	text-align: center;
+}
+#MenuServicios> li> a{
+	text-align: center;
+}
+.item.main {
+      display: block;
+      width: 100%;
+      height: 500px;
+      background-position: center;
+      background-repeat: non-repeat;
+      background-size: cover;
+
+}
+
+.item.Second {
+      display: block;
+      width: 100%;
+      height: 500px;
+      background-position: center;
+      background-position: center;
+      background-repeat: non-repeat;
+      background-size: cover;
+
+}
+
+#inicioSlide> ol> li{
+	background-color: #000000;
+}
+
+#objetosInternosCarousel> div> div{
+	width: 25%;
+	background-color: #000000;
+}
+
+#objetosInternosCarousel> div> div> h1{
+	text-align: center;	
+}
+
+#objetosInternosCarousel> div> div> p{
+	text-align: justify;	
+}
+
+.contenedorCentrado{
+	left:50%; 
+	top:50%; 
+	position:absolute;
+  width: 100%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	opacity: 0.85;
+  background-color: #fff;
+}
+
+.servicios{
+	width: inherit;
+}
+
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/*
+WHAT IS NEW IN 3.3: "Added transforms to improve carousel performance in modern browsers."
+now override the 3.3 new styles for modern browsers & apply opacity
+*/
+@media all and (transform-3d), (-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+      opacity: 0;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+      opacity: 1;
+      -webkit-transform: translate3d(0, 0, 0);
+              transform: translate3d(0, 0, 0);
+    }
+}
+.paralelogramo {
+     width: 100%; 
+     height: auto; 
+     border: 3px solid #555; 
+     background: #FB391B;
+     -webkit-transform: skew(20deg);
+     -moz-transform: skew(20deg);
+     -ms-transform: skew(20deg);
+     -o-transform: skew(20deg);
+     transform: skew(20deg);
+}
+
+.rectangulo {
+     width: 100%; 
+     height: auto; 
+     border: 3px solid #555;
+     background: #fff;
+     /*background: #FB391B;*/
+
+}
